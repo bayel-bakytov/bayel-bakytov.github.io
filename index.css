@@ -13,6 +13,7 @@ header{
     top: 0;
     background: lightskyblue;
     padding: 35px;
+
     
    
 }
@@ -28,8 +29,33 @@ header ul{
      align-content: center;
 }
 header nav a:hover{
-    font-size: 30px;
-    padding: 5px;
-    transition: ease-in-out 0.5s;
-    color: darkred;
+    
+    
+    
+    border-bottom: 3px solid yellow;
+}
+aside{
+    max-width: 80%;
+    display: flex;
+    align-items: center;
+}
+aside blockquote{
+    background-color: beige;
+    padding: 10px;
+    border-radius: 10px;
+    font-size: 25px;
+    transition: 0.3s;
+    transform: scale(0);
+   
+}
+aside img{
+    margin: 25px;
+    margin-left: 90px;
+    transition: 0.2s;
+}
+aside img:hover + blockquote{
+    transform: scale(1);
+}
+aside img:hover{
+    border-radius: 50%;
 }
