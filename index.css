@@ -30,7 +30,7 @@ header{
 }
 
 .lists{
-   width:685px ;
+   width:550px ;
    
 }
 .lists ul{
@@ -51,4 +51,33 @@ header{
       margin-right: 15px;
       font-size: 28px;
       
+}
+aside{
+    display: flex;
+    align-items: center;
+}
+.about{
+    width: 100px;
+    height: 100px;
+    border: 1px solid black;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 15px;
+}
+aside blockquote{
+    background-color: gray;
+    padding: 10px;
+    border-radius: 10px;
+    transform: scale(0);
+    transition: 0.5s;
+    width: 400px;
+    float:left;
+}
+aside .about:hover{
+    border-radius: 50%;
+    transition: ease-out 0.5s;
+}
+aside .about:hover + blockquote{
+    transform: scale(1);
 }
