@@ -154,3 +154,56 @@ aside .about:hover ~ .circle{
   height: 20px;
   transition: .3s ease-in .3s;
 }
+main>*{
+    display: flex;
+    flex-wrap: wrap;
+}
+main div:nth-child(1){
+    text-align: center;
+    border: black 1px solid;
+    font-size: 25px;
+    padding-bottom: 5px;
+    padding-top: 5px;
+    display: flex;
+    align-items: center;
+}
+main div:nth-child(2){
+    background-color: lightblue;
+    flex-grow: 0;
+    flex-shrink: 0;
+    flex-basis:45% ;
+    border: solid 1px black;
+    margin: 12px;
+      font-size: 25px;
+}
+main div:nth-child(3){
+    background-color: lightblue;
+    flex-grow: 0;
+    flex-shrink: 0;
+    flex-basis:45% ;
+    border: black 1px solid;
+    box-sizing: border-box;
+    margin: 12px;
+    font-size: 25px;
+    padding: 10px;
+    
+}
+main div:nth-child(3) h3{
+    color: blue;
+    justify-content: center;
+    margin-left: 100px;
+  
+
+}
+main div:nth-child(4){
+    display: block;
+    background-color: lightblue;
+    flex-grow: 1;
+    flex-shrink: 0;
+    border: 1px solid black;
+    font-size: 25px;
+    padding: 5px;
+}
+main div:nth-child(4) ul li{
+    list-style: none;
+}
