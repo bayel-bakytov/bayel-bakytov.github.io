@@ -6,8 +6,7 @@ body{
     background-color: yellow;
 }
 body>aside,main{
-   max-width: 1000px;
-   width: 80%;
+   max-width: 1100px;
    display: flex;
    justify-content: center;  
    
@@ -42,6 +41,7 @@ header{
 }
 .name p {
     font-size: 20px;
+    font-family: 'Raleway', sans-serif;
 }
 
 .lists{
@@ -66,6 +66,14 @@ header{
       margin-right: 15px;
       font-size: 28px;
       
+}
+.lists ul li a:hover{
+    color: black;
+    background-color: yellow;
+    padding: 10px;
+    font-weight: bold;
+    transition: ease-in-out 0.6s;
+    border-radius:  8px;
 }
 aside{
     display: flex;
@@ -114,6 +122,7 @@ main{
      flex-wrap: wrap;
      height: 800px;
      margin-bottom: 50px;
+     box-shadow: 6px 6px  10px black;
 }
 main h3 {
     display: flex;
@@ -159,6 +168,7 @@ aside .about:hover ~ .circle{
 main>*{
     display: flex;
     flex-wrap: wrap;
+    font-family: Arial, Helvetica, sans-serif;
 }
 main div:nth-child(1){
     text-align: center;
@@ -221,4 +231,11 @@ main div:nth-child(4){
 }
 main div:nth-child(4) ul li{
     list-style: none;
+}
+main div:nth-child(4){
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    flex-grow: 0;
+
 }
