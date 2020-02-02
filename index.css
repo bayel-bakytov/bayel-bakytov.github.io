@@ -19,8 +19,7 @@ body>aside,main{
 flex-basis: 100%;
     margin:0 auto ;
     height: 200px;
-    position: sticky;
-    top: 0;
+   
 }
 header{
     display: flex;
@@ -28,8 +27,7 @@ header{
    background-color: black;
    height: 200px;
    justify-content: space-between;
-   position: sticky;
-   top: 0;
+  
    
 }
 .name span{
@@ -84,6 +82,7 @@ aside{
     justify-content: center;
     margin: 15px;
     font-size: 28px;
+    border-radius: 20px;
 }
 aside blockquote{
     background-color:lightskyblue;
@@ -104,6 +103,7 @@ aside .about:hover{
 }
 aside .about:hover+blockquote{
     transform: scale(1);
+    
 }
 main{
     background-color: white;
@@ -170,6 +170,7 @@ main div:nth-child(1){
     align-items: center;
     border-radius: 12px;
     background-color: lightskyblue;
+    box-shadow: 6px 6px  10px black;
 }
 main div:nth-child(2){
     background-color: lightblue;
@@ -183,6 +184,7 @@ main div:nth-child(2){
     padding: 10px;
     justify-content: center;
     align-self: center;
+    box-shadow: 6px 6px  10px black;
 }
 main div:nth-child(3){
     background-color: lightblue;
@@ -197,7 +199,7 @@ main div:nth-child(3){
     border-radius: 12px;
     justify-content: center;
     align-self: center;
-    
+    box-shadow: 6px 6px  10px black;
 }
 main div:nth-child(3) h3{
     color: blue;
@@ -215,6 +217,7 @@ main div:nth-child(4){
     font-size: 25px;
     padding: 5px;
     border-radius: 12px;
+    box-shadow: 6px 6px  10px black;
 }
 main div:nth-child(4) ul li{
     list-style: none;
