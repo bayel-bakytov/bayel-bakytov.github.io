@@ -68,12 +68,8 @@ header{
       
 }
 .lists ul li a:hover{
-    color: black;
-    background-color: yellow;
-    padding: 10px;
-    font-weight: bold;
-    transition: ease-in-out 0.6s;
-    border-radius:  8px;
+   border-bottom: 5px solid white;
+   transition: .4s ;
 }
 aside{
     display: flex;
