@@ -12,6 +12,33 @@ body>aside,main{
    
 }
 
+
+header{
+  display: flex;
+  justify-content: space-evenly;
+  width: 100%;
+  height: 80px;
+  background-color: black;
+  position: sticky;
+  left: 0;
+  top: 0;
+  align-items: center;
+
+}
+header ul {
+    display: flex;
+}
+ div p {
+    color: white;
+}
+header ul li {
+    list-style: none;
+    width: 120px;
+}
+header a {
+    text-decoration: none;
+    color: white;
+}
 aside{
     display: flex;
     align-items: center;
