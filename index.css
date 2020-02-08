@@ -11,66 +11,7 @@ body>aside,main{
    justify-content: center;  
    
 }
-#div-body{
-    display: flex ;
-    flex-grow: 1;
-    flex-wrap: wrap;
-flex-basis: 100%;
-    margin:0 auto ;
-    height: 200px;
-   
-}
-header{
-    display: flex;
-    flex-basis: 100%;
-   background-color: black;
-   height: 200px;
-   justify-content: space-between;
-  
-   
-}
-.name span{
-    font-family: 'Sigmar One', cursive;
-}
-.name{
-    width:200px ;
-    color: white;
-    margin-top: 15px;
-    margin-left: 35px;
-    font-size: 40px;
-}
-.name p {
-    font-size: 20px;
-    font-family: 'Raleway', sans-serif;
-}
 
-.lists{
-   width:550px ;
-   
-}
-.lists ul{
-     display: flex;
-     justify-content: flex-end;
-}
-.lists ul li {
-   
-   list-style: none;
-}
-.lists ul li a {
-     color: white;
-     text-decoration: none;
-     width: 100px;
-     display: block;
-      text-align: center;
-      margin-top: 67%;
-      margin-right: 15px;
-      font-size: 28px;
-      
-}
-.lists ul li a:hover{
-   border-bottom: 5px solid white;
-   transition: .4s ;
-}
 aside{
     display: flex;
     align-items: center;
