@@ -3,17 +3,25 @@ body{
     background-color: white;
     margin: 0;
     padding: 0;
+    font-family: sans-serif;
+}
+body>*{
+    margin: 0;
+    padding: 0;
 }
 header{
   display: flex;
   justify-content: space-evenly;
   width: 100%;
   height: 80px;
-  background-color: black;
-  position: fixed;
-  left: 0;
+  background-image: url(images.jpg);
+  background-repeat: no-repeat;
+  background-size: 100%;
+  position: sticky;
   top: 0;
+  left: 0;
   align-items: center;
+  box-sizing: border-box;
 
 }
 header ul {
@@ -23,6 +31,15 @@ header div p {
     color: white;
     margin: 0;
 }
+header div p:first-child{
+    font-size: 25px;
+    font-weight: bold;
+    font-family: 'Russo One', sans-serif;
+}
+header div p:last-child{
+    font-size: 18px;
+    color: aqua;
+}
 header ul li {
     list-style: none;
     width: 120px;
@@ -30,11 +47,63 @@ header ul li {
 header a {
     text-decoration: none;
     color: white;
+    font-size: 20px;
+    padding-bottom: 5px;
 }
-
+header a:hover{
+    border-bottom: lightgray 2px solid;
+    color: rgb(36, 206, 197);
+    transition: ease-in-out;
+}
 
 section{
     width: 100%;
     height: 100vh;
+}
+#home{
+    display: flex;
+    flex-direction: column;
+   align-items: center;
+}
+
+.me{
+   width: 25%;
+   padding: 5px;
+   margin-top: 20px;
+   background-color: black;
+   color: white;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   box-sizing: border-box;
+   font-weight: 700;
+}
+.me p:first-child span{
+    color: aqua;
+}
+.big-block{
+    width: 75%;
+    background-color: black;
+    color: aqua;
+    font-weight: 900;
+    padding: 30px;
+    display: flex;
+    justify-content: center;
+    margin-top: 30px;
+    font-size: 50px;
+    box-sizing: border-box;
+    box-sizing: border-box;
+       
+}
+.inf{
+    width:65% ;
+    margin-top: 25px;
+}
+.inf p:first-child{
+    font-size: 25px;
+    font-weight: 800;
+}
+.inf p:last-child{
+    font-size: 17px;
 
 }
