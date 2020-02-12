@@ -9,7 +9,7 @@ body>*{
     margin: 0;
     padding: 0;
 }
-header{
+#boss{
   display: flex;
   justify-content: space-evenly;
   width: 100%;
@@ -52,7 +52,7 @@ header a {
 }
 header a:hover{
     border-bottom: lightgray 2px solid;
-    color: rgb(36, 206, 197);
+    color: aquamarine;
     transition: ease-in-out;
 }
 
@@ -64,6 +64,9 @@ section{
     display: flex;
     flex-direction: column;
    align-items: center;
+  box-sizing: border-box;
+   height: 100vh;
+   width: 100%;
 }
 
 .me{
@@ -77,6 +80,7 @@ section{
    align-items: center;
    box-sizing: border-box;
    font-weight: 700;
+   box-sizing: border-box;
 }
 .me p:first-child span{
     color: aqua;
@@ -92,12 +96,12 @@ section{
     margin-top: 30px;
     font-size: 50px;
     box-sizing: border-box;
-    box-sizing: border-box;
        
 }
 .inf{
     width:65% ;
     margin-top: 25px;
+    box-sizing: border-box;
 }
 .inf p:first-child{
     font-size: 25px;
@@ -106,4 +110,70 @@ section{
 .inf p:last-child{
     font-size: 17px;
 
+}
+#about{
+     
+     background-size: cover;
+     background-color: black;
+}
+#about header {
+    width: 30%;
+    height: 100px;
+    background-color: black;
+    color: white;
+    font-size: 40px;
+    font-weight: bold;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: aqua;
+}
+.head{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    
+}
+#about img {
+    height: 350px;
+    margin-left: 50px;
+    margin-right: 50px;
+    border-radius: 50%;
+   
+}
+.some-inf{
+    padding: 15px;
+    border: 1px aqua solid;
+    width: 85%;
+    font-size: 22px;
+    color: aqua;
+    border-radius: 10px;
+
+}
+.front{
+    padding: 15px;
+    border: 1px aqua solid; 
+    width: 85%;
+    font-size: 22px;
+    color: aqua;
+    border-radius: 10px;
+}
+.about-me{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+.span{
+    display: flex;
+    flex-direction: column;
+}
+.span>*{
+    margin: 15px;
+}
+#services{
+    background-image: url(mac.jpg);
+    background-size: cover;
+    
 }
