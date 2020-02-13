@@ -14,14 +14,14 @@ body>*{
   justify-content: space-evenly;
   width: 100%;
   height: 80px;
-  background-image: url(images.jpg);
+  background-color: black;
   background-repeat: no-repeat;
   background-size: 100%;
+  align-items: center;
+  box-sizing: border-box;
   position: sticky;
   top: 0;
   left: 0;
-  align-items: center;
-  box-sizing: border-box;
 
 }
 header ul {
@@ -59,6 +59,8 @@ header a:hover{
 section{
     width: 100%;
     height: 100vh;
+    
+    
 }
 #home{
     display: flex;
@@ -110,6 +112,9 @@ section{
 .inf p:last-child{
     font-size: 17px;
 
+}
+.active{
+    
 }
 #about{
      
@@ -176,19 +181,30 @@ section{
     background-image: url();
     background-size: cover;
     width: 100%;
-
+    background-color: black;
+    height: 140vh;
 }
 #services header{
     display: flex;
     justify-content: center;
-    padding: 30px;
+    width: 100%;
     background-color: black;
-    color: aqua;
-    
-    margin: 10px;
+   
+   
+   
 
 }
-
+#services header div{
+     color: aqua;
+    width: 30%;
+     border: 1px solid aqua;
+      padding: 10px;
+    margin-bottom: 55px;
+    display: flex;
+    justify-content: center;
+    font-size: 35px;
+    font-weight: bold;
+}
 .text img {
     height: 80px;
     width: 80px;
@@ -203,14 +219,18 @@ section{
     margin-top: -50px;
 }
 .text>div {
-    
-    
-    padding: 40px;
-    width: 35%;
-    margin: 5px;
+    border-radius: 10px;
+    border: aqua 1px solid;
+    padding: 20px;
+    width: 30%;
+    margin: 15px;
     text-align: center;
-    color: black;
-    
+    color: aqua;
+    transition: 0.4s;
+    box-sizing: border-box;
+}
+.text > div:hover{
+    transform: translateY(-10px) ;
 }
 .text>h2{
     padding-bottom: 30px;
@@ -227,9 +247,20 @@ section{
 
 }
 .text-2 > div{
-    padding: 40px;
-    width: 35%;
-    margin: 5px;
+    padding: 20px;
+    width: 30%;
+    margin: 15px;
     text-align: center;
-    color: black;
+    color: aqua;
+    border: aqua 1px solid;
+    border-radius: 10px;
+    box-sizing: border-box;
+    transition: 0.4s;
+}
+.text-2 > div:hover{
+    transform: translateY(-10px) ;
+}
+#portfolio{
+    background-image: url(mac.jpg);
+    background-size: cover;
 }
