@@ -173,7 +173,63 @@ section{
     margin: 15px;
 }
 #services{
-    background-image: url(mac.jpg);
+    background-image: url();
     background-size: cover;
+    width: 100%;
+
+}
+#services header{
+    display: flex;
+    justify-content: center;
+    padding: 30px;
+    background-color: black;
+    color: aqua;
     
+    margin: 10px;
+
+}
+
+.text img {
+    height: 80px;
+    width: 80px;
+    
+
+    
+}
+
+.text{
+    display: flex;
+    justify-content: space-evenly;
+    margin-top: -50px;
+}
+.text>div {
+    
+    
+    padding: 40px;
+    width: 35%;
+    margin: 5px;
+    text-align: center;
+    color: black;
+    
+}
+.text>h2{
+    padding-bottom: 30px;
+
+}
+.text-2{
+    display: flex;
+    justify-content: space-around;
+
+}
+.text-2  img {
+    width: 80px;
+    height: 80px;
+
+}
+.text-2 > div{
+    padding: 40px;
+    width: 35%;
+    margin: 5px;
+    text-align: center;
+    color: black;
 }
