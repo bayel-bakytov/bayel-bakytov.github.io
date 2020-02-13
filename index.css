@@ -15,8 +15,6 @@ body>*{
   width: 100%;
   height: 80px;
   background-color: black;
-  background-repeat: no-repeat;
-  background-size: 100%;
   align-items: center;
   box-sizing: border-box;
   position: sticky;
@@ -80,9 +78,7 @@ section{
    display: flex;
    justify-content: center;
    align-items: center;
-   box-sizing: border-box;
    font-weight: 700;
-   box-sizing: border-box;
 }
 .me p:first-child span{
     color: aqua;
@@ -117,8 +113,6 @@ section{
     
 }
 #about{
-     
-     background-size: cover;
      background-color: black;
 }
 #about header {
@@ -178,8 +172,6 @@ section{
     margin: 15px;
 }
 #services{
-    background-image: url();
-    background-size: cover;
     width: 100%;
     background-color: black;
     height: 140vh;
@@ -189,10 +181,6 @@ section{
     justify-content: center;
     width: 100%;
     background-color: black;
-   
-   
-   
-
 }
 #services header div{
      color: aqua;
@@ -208,9 +196,6 @@ section{
 .text img {
     height: 80px;
     width: 80px;
-    
-
-    
 }
 
 .text{
