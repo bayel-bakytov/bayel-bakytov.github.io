@@ -172,6 +172,7 @@ section{
     margin: 15px;
 }
 #services{
+    margin-top: 10px;
     width: 100%;
     background-color: black;
     height: 140vh;
@@ -186,7 +187,7 @@ section{
      color: aqua;
     width: 30%;
      border: 1px solid aqua;
-      padding: 10px;
+      border-radius: 10px;
     margin-bottom: 55px;
     display: flex;
     justify-content: center;
@@ -229,7 +230,6 @@ section{
 .text-2  img {
     width: 80px;
     height: 80px;
-
 }
 .text-2 > div{
     padding: 20px;
@@ -248,4 +248,60 @@ section{
 #portfolio{
     background-image: url(mac.jpg);
     background-size: cover;
+}
+#contacts{
+    background-color: black;
+}
+#contacts header{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+#contacts header h1{
+    padding: 20px 40px;
+    border: aqua 1px solid;
+    color: aqua;
+    border-radius: 10px;
+}
+
+.inputs{
+    display: flex;
+    width: 100%;
+    justify-content: space-around;
+    align-items: center;
+}
+.inp-name{
+
+    display: flex;
+    flex-direction: column;
+}
+.inp-name > input{
+    width: 500px;
+    margin: 25px;
+    padding: 10px 20px;
+    border: aqua 3px solid;
+}
+
+.message{
+    width: 500px;
+    padding-bottom: 200px;
+    padding-left: 5px;
+    padding-top: 5px;
+    border: 1px solid aqua;
+}
+.but{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    
+}
+.but button{
+    padding: 20px;
+    background-color: black;
+    color: aqua;
+    border: 1px solid aqua;
+    border-radius: 5px;
+    font-size: 20px;
+    font-weight: bold;
+    cursor: pointer;
 }
