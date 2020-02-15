@@ -4,6 +4,7 @@ body{
     margin: 0;
     padding: 0;
     font-family: sans-serif;
+    width: 100%;
 }
 body>*{
     margin: 0;
@@ -255,6 +256,7 @@ section{
 }
 #contacts{
     background-color: black;
+    height: 80vh;
 }
 #contacts header{
     width: 100%;
@@ -351,4 +353,143 @@ footer{
 }
 .adress p{
     font-size: 25px;
+}
+
+@media(max-width: 750px){
+    body{
+        width: 100%;
+    }
+     #boss{
+
+    }
+    #boss header{
+        height: 100px;
+    }
+    #boss ul {
+        
+    display: none;
+    }
+    
+
+    #home{
+  height: 100vh;
+ 
+
+    }
+    .me{
+        width: 35%;
+        font-weight: 300;
+    }
+    .big-block{
+        width: 90%;
+        font-size: 40px;
+        padding: 20px;
+        margin-top: 20px;
+        font-weight: 700;
+        box-sizing: border-box;
+    }
+    .inf{
+        box-sizing: border-box;
+        width: 85%;
+        margin-top: 15px;
+    }
+    .inf p:first-child{
+        font-size: 20px;
+        font-weight: 600;
+        padding: 15px 25px;
+        box-sizing: border-box;
+
+    }
+
+    #about{
+        height: 170vh;
+    }
+    #about header{
+        width: 60%;
+        font-size: 30px;
+        margin: 25px;
+    }
+    .about-me{
+        flex-wrap: wrap;
+      
+    }
+    .front{
+        font-size: 16px;
+    }
+    .some-inf{
+        font-size: 16px;
+    }
+    #services{
+
+        height: 225vh;
+    }
+    #services header div{
+           width: 60%;
+           font-size: 25px;
+    }
+    #portfolio{
+        height: 30vh;
+        background-size: 100%;
+        background-repeat: no-repeat;
+    }
+    #contacts{
+        height: 110vh;
+    }
+    .text{
+        flex-wrap: wrap;
+    }
+    .text>div{
+        padding: 10px;
+        width: 40%;
+        margin: 5px;
+    }
+    .text-2 > div {
+        width: 40%;
+        padding: 10px;
+        margin: 5px;
+    }
+    .inputs{
+        flex-wrap: wrap;
+    }
+    .inp-name > input {
+        width: 300px;
+
+    }
+    .message{
+        width: 300px;
+        padding-bottom:150px ;
+        margin-bottom: 15px;
+
+    }
+    .but button{
+        padding: 15px;
+        font-size: 16px;
+        font-weight: 500;
+
+    }
+    .adress p{
+        font-size: 18px;
+    }
+    .newsletter p {
+        font-size: 18px;
+    }
+    .logo{
+        flex-wrap: wrap;
+        flex-direction: row;
+    }
+    .newsletter h1{
+      font-size: 20px;
+    }
+    footer{
+        height: 55vh;
+        align-items: flex-start;
+        justify-content: space-between;
+        flex-direction: column;
+    }
+    .adress h1{
+       font-size: 20px;
+    }
+    footer > * {
+        margin-left: 20px;
+    }
 }
