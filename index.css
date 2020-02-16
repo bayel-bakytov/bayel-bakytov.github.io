@@ -6,81 +6,84 @@ body{
     font-family: sans-serif;
     width: 100%;
 }
-body>*{
+body,html{
+    overflow-x: hidden;
+}
+*{
     margin: 0;
     padding: 0;
 }
 #boss{
-  display: flex;
-  justify-content: space-evenly;
-  width: 100%;
-  height: 80px;
-  background-color: darkslategrey;
-  align-items: center;
-  box-sizing: border-box;
-  position: sticky;
-  top: 0;
-  left: 0;
-  z-index: 99;
+    width: 100%;
+     position: fixed;
+    top: 0;
+    left: 0; 
+     z-index: 99;
 }
-header ul {
-    display: flex;
+nav{
+    background-color: darkcyan;
+    margin: 0 auto;
+    width: 100%;
+  
 }
-header div p {
-    color: white;
+#checkbox-menu,.toggle{
+    display: none;
+}
+.menu{
+    padding: 0;
     margin: 0;
-}
-header div p:first-child{
-    font-size: 25px;
-    font-weight: bold;
-    font-family: 'Russo One', sans-serif;
-}
-header div p:last-child{
-    font-size: 18px;
-    color: aqua;
-}
-header ul li {
+    height: 100px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
     list-style: none;
-    width: 120px;
 }
-header a {
-    text-decoration: none;
+.menu li a{
     color: white;
+    text-decoration: none;
+    align-self: center;
     font-size: 20px;
-    padding-bottom: 5px;
+    padding: 10px 15px;
+    font-weight: bold;
+    transition: 0.4s ease-in-out;
+     border-radius: 5px;
 }
-header a:hover{
-    border-bottom: lightgray 2px solid;
-    color: aquamarine;
-    transition: ease-in-out;
+.menu li a:hover{
+    background-color: white;
+    color: black;
 }
-
+.menu li  a.logo{
+    font-size: 35px;
+    margin-right: 250px;
+}
 section{
     width: 100%;
     height: 100vh;
-    
-    
 }
 #home{
     display: flex;
     flex-direction: column;
-   align-items: center;
-  box-sizing: border-box;
+    align-items: center;
+      box-sizing: border-box;
    height: 90vh;
    width: 100%;
    background: linear-gradient(to top, aqua, white);
+   position: relative;
+  top: 100px;
 }
 
 .me{
    width: 25%;
-   padding: 5px;
-   margin-top: 20px;
+   padding: 15px;
+   margin-top: 50px;
    background-color: black;
    color: white;
    display: flex;
    justify-content: center;
    align-items: center;
    font-weight: 700;
+   border-radius: 15px;
 }
 .me p:first-child span{
     color: aqua;
@@ -90,29 +93,32 @@ section{
     background-color: black;
     color: aqua;
     font-weight: 900;
-    padding: 30px;
+    padding: 60px;
     display: flex;
     justify-content: center;
-    margin-top: 30px;
+    margin-top: 50px;
     font-size: 50px;
     box-sizing: border-box;
-       
+    border-radius: 15px;
 }
 .inf{
     width:65% ;
-    margin-top: 25px;
+    margin-top: 60px;
     box-sizing: border-box;
+    padding: 20px 35px;
+    background-color: black;
+    border-radius: 15px;
 }
-.inf p:first-child{
+
+.inf p{
     font-size: 25px;
     font-weight: 800;
-    background-color: black;
     color: aqua;
-    padding: 20px 35px;
-
 }
 #about{
      background-color: black;
+     position: relative;
+     top: 100px;
 }
 #about header {
     width: 30%;
@@ -128,7 +134,7 @@ section{
     border: aqua 1px solid;
     border-radius: 10px;
     padding: 15px 25px;
-    margin-top: 15px;
+    margin-top: 25px;
     box-sizing: border-box;
 }
 .head{
@@ -168,32 +174,37 @@ section{
     align-items: center;
     width: 100%;
 }
-.span{
+.information{
     display: flex;
     flex-direction: column;
 }
-.span>*{
-    margin: 15px;
+.information>*{
+    margin: 25px;
+    box-sizing: border-box;
 }
 #services{
     border-top:4px solid aqua ;
     width: 100%;
     background-color: black;
-    height: 140vh;
+    height: 100vh;
+    position: relative;
+    top: 100px;
 }
 #services header{
     display: flex;
     justify-content: center;
     width: 100%;
     background-color: black;
-    margin-top: 15px;
+    margin-top: 25px;
 }
+
+
 #services header div{
+    margin-bottom: 55px;
      color: aqua;
     width: 30%;
      border: 1px solid aqua;
       border-radius: 10px;
-    margin-bottom: 55px;
     display: flex;
     justify-content: center;
     font-size: 35px;
@@ -230,6 +241,7 @@ section{
 .text-2{
     display: flex;
     justify-content: space-around;
+    flex-wrap: wrap;
 
 }
 .text-2  img {
@@ -251,14 +263,19 @@ section{
     transform: translateY(-10px) ;
 }
 #portfolio{
+    position: relative;
+    top: 100px;
     background-image: url(mac.jpg);
     background-size: cover;
 }
 #contacts{
     background-color: black;
     height: 80vh;
+    position: relative;
+    top: 100px;
 }
 #contacts header{
+    padding-top: 25px;
     width: 100%;
     display: flex;
     justify-content: center;
@@ -269,7 +286,6 @@ section{
     color: aqua;
     border-radius: 10px;
 }
-
 .inputs{
     display: flex;
     width: 100%;
@@ -277,7 +293,6 @@ section{
     align-items: center;
 }
 .inp-name{
-
     display: flex;
     flex-direction: column;
 }
@@ -288,7 +303,6 @@ section{
     border: aqua 5px solid;
     font-size: 18px;
 }
-
 .message{
     width: 500px;
     padding-bottom: 200px;
@@ -314,17 +328,17 @@ section{
     font-weight: bold;
     cursor: pointer;
 }
-
-
 footer{
+    position: relative;
+    top: 100px;
     width: 100%;
     display: flex;
     justify-content: space-around;
     align-items: center;
-    height: 35vh;
+    height: 30vh;
     background-color: aqua;
 }
-.logo{
+.logos{
     display: flex;
     font-size: 35px;
     flex-direction: column;
@@ -355,29 +369,59 @@ footer{
     font-size: 25px;
 }
 
-@media(max-width: 750px){
-    body{
+@media(max-width: 765px){
+    .toggle{
+        clear: both;
+        display: block;
+        font-size: 18px;
+        line-height: 40px;
         width: 100%;
-    }
-     #boss{
+        color: black;
+        transition: all .1s linear;
+        padding-left: 20px;
+        background-color:skyblue ;
 
     }
-    #boss header{
-        height: 100px;
+    #checkbox-menu:checked + label .touch li{
+        opacity: 1;
+        visibility: visible;
+        transition: all 0.7s ease-in-out;
     }
-    #boss ul {
-        
-    display: none;
+    #checkbox-menu:checked + label .touch {
+        height: 320px;
     }
-    
+    .menu{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        align-items: center;
+        height: 0px;
+        transition: height .3s linear;
+    }
+    .menu li {
+        display: flex;
+        align-self: center;
+        width: 95%;
+        opacity: 0;
+        visibility: hidden;
 
+    }
+     .menu li a {
+         width: 95%;
+         text-align: center;
+         align-self: center;
+         align-content: center;
+     }
+     menu li a.logo{
+         font-size: 21px;
+         margin-right: 0;
+     }
     #home{
-  height: 100vh;
- 
-
+  height: 75vh;
     }
     .me{
-        width: 35%;
+        margin-top: 15px;
+        width: 55%;
         font-weight: 300;
     }
     .big-block{
@@ -402,7 +446,7 @@ footer{
     }
 
     #about{
-        height: 170vh;
+        height: 185vh;
     }
     #about header{
         width: 60%;
@@ -421,7 +465,7 @@ footer{
     }
     #services{
 
-        height: 225vh;
+        height: 200vh;
     }
     #services header div{
            width: 60%;
@@ -440,11 +484,11 @@ footer{
     }
     .text>div{
         padding: 10px;
-        width: 40%;
+        width: 90%;
         margin: 5px;
     }
     .text-2 > div {
-        width: 40%;
+        width: 90%;
         padding: 10px;
         margin: 5px;
     }
@@ -473,15 +517,18 @@ footer{
     .newsletter p {
         font-size: 18px;
     }
-    .logo{
-        flex-wrap: wrap;
+    .logos{
         flex-direction: row;
-    }
+        margin-bottom: 100px;
+        }
+        .logos>*{
+            margin: 10px;
+        }
     .newsletter h1{
       font-size: 20px;
     }
     footer{
-        height: 55vh;
+        height: 45vh;
         align-items: flex-start;
         justify-content: space-between;
         flex-direction: column;
