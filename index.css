@@ -57,7 +57,7 @@ section{
     height: 100vh;
 }
 #home{
-    margin-top: 80px;
+    margin-top: 70px;
     background-image: url(cam.jpg);
     background-size: cover;
     background-attachment: fixed;
@@ -69,7 +69,7 @@ section{
 
 
 #about{
-     background-color:#5CDB95;
+     background-color:#8ee4af;
 }
 #about header {
     width: 30%;
@@ -129,7 +129,7 @@ section{
     box-sizing: border-box;
 }
 #services{
-    padding-top: 50PX;
+    padding-top: 70PX;
     width: 100%;
     background-color:#5CDB95;
     height: 100vh;
@@ -140,24 +140,25 @@ section{
     width: 100%;
     background-color:#5CDB95;
 }
-
-
 #services header div{
-    margin-bottom: 55px;
-     color: black;
+    margin-bottom: 65px;
+     color: white;
     width: 30%;
       border-radius: 10px;
     display: flex;
     justify-content: center;
     font-size: 35px;
-    font-weight: bold;
+    font-weight: bolder;
 }
 .text img {
     height: 80px;
     width: 80px;
 }
-
-.text{
+.text>h2{
+    padding-bottom: 30px;
+    color: rgb(10, 10, 136);
+}
+.text {
     display: flex;
     justify-content: space-evenly;
     margin-top: -50px;
@@ -175,9 +176,7 @@ section{
 .text > div:hover{
     transform: translateY(-10px) ;
 }
-.text>h2{
-    padding-bottom: 30px;
-}
+
 .text-2{
     display: flex;
     justify-content: space-around;
@@ -199,6 +198,9 @@ section{
 }
 .text-2 > div:hover{
     transform: translateY(-10px) ;
+}
+.text-2 > h2{
+    color: white;
 }
 #portfolio{
     background-image: url(mac.jpg);
@@ -268,7 +270,8 @@ footer{
     justify-content: space-around;
     align-items: center;
     height: 30vh;
-    background-color: #05386B;
+    background-color: black;
+    color: white;
 }
 .logos{
     display: flex;
