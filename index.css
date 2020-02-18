@@ -5,9 +5,6 @@ body{
     font-family: sans-serif;
     width: 100%;
 }
-body,html{
-    overflow-x: hidden;
-}
 *{
     margin: 0;
     padding: 0;
@@ -20,10 +17,9 @@ body,html{
      z-index: 99;
 }
 nav{
-    background-color: darkcyan;
+    background-color: #05386B;
     margin: 0 auto;
     width: 100%;
-  
 }
 #checkbox-menu,.toggle{
     display: none;
@@ -31,7 +27,7 @@ nav{
 .menu{
     padding: 0;
     margin: 0;
-    height: 100px;
+    height: 70px;
     display: flex;
     flex-direction: row;
     justify-content: space-around;
@@ -45,7 +41,7 @@ nav{
     font-size: 20px;
     padding: 10px 15px;
     font-weight: bold;
-    transition: 0.4s ease-in-out;
+    transition: 0.3s ease-in-out;
      border-radius: 5px;
 }
 .menu li a:hover{
@@ -61,76 +57,30 @@ section{
     height: 100vh;
 }
 #home{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-      box-sizing: border-box;
-   height: 90vh;
-   width: 100%;
-   background: linear-gradient(to top, aqua, white);
-   position: relative;
-  top: 100px;
-}
-
-.me{
-   width: 25%;
-   padding: 15px;
-   margin-top: 50px;
-   background-color: black;
-   color: white;
-   display: flex;
-   justify-content: center;
-   align-items: center;
-   font-weight: 700;
-   border-radius: 15px;
-}
-.me p:first-child span{
-    color: aqua;
-}
-.big-block{
-    width: 75%;
-    background-color: black;
-    color: aqua;
-    font-weight: 900;
-    padding: 60px;
+    margin-top: 80px;
+    background-image: url(cam.jpg);
+    background-size: cover;
+    background-attachment: fixed;
     display: flex;
     justify-content: center;
-    margin-top: 50px;
-    font-size: 50px;
-    box-sizing: border-box;
-    border-radius: 15px;
-}
-.inf{
-    width:65% ;
-    margin-top: 60px;
-    box-sizing: border-box;
-    padding: 20px 35px;
-    background-color: black;
-    border-radius: 15px;
+    align-items: center;
+    transition: background-atachment 0.4s;
 }
 
-.inf p{
-    font-size: 25px;
-    font-weight: 800;
-    color: aqua;
-}
+
 #about{
-     background-color: black;
-     position: relative;
-     top: 100px;
+     background-color:#5CDB95;
 }
 #about header {
     width: 30%;
     height: 100px;
-    background-color: black;
-    color: white;
+    background-color: #5CDB95;
     font-size: 40px;
     font-weight: bold;
     display: flex;
     justify-content: center;
     align-items: center;
-    color: aqua;
-    border: aqua 1px solid;
+    color: white;
     border-radius: 10px;
     padding: 15px 25px;
     margin-top: 25px;
@@ -141,7 +91,6 @@ section{
     justify-content: center;
     align-items: center;
     width: 100%;
-    
 }
 #about img {
     height: 350px;
@@ -152,19 +101,17 @@ section{
 }
 .some-inf{
     padding: 15px;
-    border: 1px aqua solid;
     width: 85%;
     font-size: 22px;
-    color: aqua;
+    color:black;
     border-radius: 10px;
 
 }
 .front{
     padding: 15px;
-    border: 1px aqua solid; 
     width: 85%;
     font-size: 22px;
-    color: aqua;
+    color:black;
     border-radius: 10px;
 }
 .about-me{
@@ -182,27 +129,23 @@ section{
     box-sizing: border-box;
 }
 #services{
-    border-top:4px solid aqua ;
+    padding-top: 50PX;
     width: 100%;
-    background-color: black;
+    background-color:#5CDB95;
     height: 100vh;
-    position: relative;
-    top: 100px;
 }
 #services header{
     display: flex;
     justify-content: center;
     width: 100%;
-    background-color: black;
-    margin-top: 25px;
+    background-color:#5CDB95;
 }
 
 
 #services header div{
     margin-bottom: 55px;
-     color: aqua;
+     color: black;
     width: 30%;
-     border: 1px solid aqua;
       border-radius: 10px;
     display: flex;
     justify-content: center;
@@ -221,62 +164,53 @@ section{
 }
 .text>div {
     border-radius: 10px;
-    border: aqua 1px solid;
-    padding: 20px;
     width: 30%;
     margin: 15px;
     text-align: center;
-    color: aqua;
+    color: black;
     transition: 0.4s;
     box-sizing: border-box;
+    font-size: 18px;
 }
 .text > div:hover{
     transform: translateY(-10px) ;
 }
 .text>h2{
     padding-bottom: 30px;
-
 }
 .text-2{
     display: flex;
     justify-content: space-around;
     flex-wrap: wrap;
-
 }
 .text-2  img {
     width: 80px;
     height: 80px;
 }
 .text-2 > div{
-    padding: 20px;
     width: 30%;
     margin: 15px;
     text-align: center;
-    color: aqua;
-    border: aqua 1px solid;
+    color:black;
     border-radius: 10px;
     box-sizing: border-box;
     transition: 0.4s;
+    font-size: 18px;
 }
 .text-2 > div:hover{
     transform: translateY(-10px) ;
 }
 #portfolio{
-    position: relative;
-    top: 100px;
     background-image: url(mac.jpg);
     background-size: cover;
     display: flex;
     justify-content: center;
     align-items: center;
-    color: aqua;
     font-size: 45px;
 }
 #contacts{
-    background-color: black;
+    background-color: #5CDB95;
     height: 80vh;
-    position: relative;
-    top: 100px;
 }
 #contacts header{
     padding-top: 25px;
@@ -286,7 +220,6 @@ section{
 }
 #contacts header h1{
     padding: 20px 40px;
-    border: aqua 1px solid;
     color: aqua;
     border-radius: 10px;
 }
@@ -304,7 +237,6 @@ section{
     width: 500px;
     margin: 25px;
     padding: 10px 20px;
-    border: aqua 5px solid;
     font-size: 18px;
 }
 .message{
@@ -312,9 +244,7 @@ section{
     padding-bottom: 200px;
     padding-left: 10px;
     padding-top: 10px;
-    border: 1px solid aqua;
     font-size: 20px;
-    border: 5px solid aqua;
 }
 .but{
     width: 100%;
@@ -324,7 +254,7 @@ section{
 }
 .but button{
     padding: 20px;
-    background-color: black;
+    background-color: blue;
     color: aqua;
     border: 1px solid aqua;
     border-radius: 5px;
@@ -333,14 +263,12 @@ section{
     cursor: pointer;
 }
 footer{
-    position: relative;
-    top: 100px;
     width: 100%;
     display: flex;
     justify-content: space-around;
     align-items: center;
     height: 30vh;
-    background-color: aqua;
+    background-color: #05386B;
 }
 .logos{
     display: flex;
@@ -446,7 +374,6 @@ footer{
         font-weight: 600;
         padding: 15px 25px;
         box-sizing: border-box;
-
     }
 
     #about{
@@ -459,7 +386,6 @@ footer{
     }
     .about-me{
         flex-wrap: wrap;
-      
     }
     .front{
         font-size: 16px;
@@ -468,7 +394,6 @@ footer{
         font-size: 16px;
     }
     #services{
-
         height: 200vh;
     }
     #services header div{
@@ -507,13 +432,11 @@ footer{
         width: 300px;
         padding-bottom:150px ;
         margin-bottom: 15px;
-
     }
     .but button{
         padding: 15px;
         font-size: 16px;
         font-weight: 500;
-
     }
     .adress p{
         font-size: 18px;
