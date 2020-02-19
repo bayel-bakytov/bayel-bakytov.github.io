@@ -61,6 +61,7 @@ section{
     background-image: url(cam.jpg);
     background-size: cover;
     background-attachment: fixed;
+    background-repeat: no-repeat;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -259,13 +260,17 @@ section{
 }
 .but button{
     padding: 20px;
-    background-color: blue;
-    color: aqua;
-    border: 1px solid aqua;
+    background-color: rgb(38, 73, 57);
+    color: white;
+    border: 1px solid silver;
     border-radius: 5px;
     font-size: 20px;
     font-weight: bold;
     cursor: pointer;
+}
+.but button:hover{
+    color: black;
+    background-color: rgb(28, 94, 138);
 }
 footer{
     width: 100%;
@@ -316,7 +321,7 @@ footer{
         width: 100%;
         color: black;
         transition: all .1s linear;
-        padding-left: 20px;
+        text-align: center;
         background-color:skyblue ;
 
     }
@@ -355,7 +360,8 @@ footer{
          margin-right: 0;
      }
     #home{
-  height: 75vh;
+      margin-top: 50px;
+      height: 75vh;
     }
     .me{
         margin-top: 15px;
@@ -400,7 +406,7 @@ footer{
         font-size: 16px;
     }
     #services{
-        height: 200vh;
+        height: 250vh;
     }
     #services header div{
            width: 60%;
@@ -432,12 +438,15 @@ footer{
     }
     .inp-name > input {
         width: 300px;
+        margin: 15px 20px;
+        box-sizing: border-box;
 
     }
     .message{
         width: 300px;
         padding-bottom:150px ;
         margin-bottom: 15px;
+        box-sizing: border-box;
     }
     .but button{
         padding: 15px;
@@ -461,10 +470,12 @@ footer{
       font-size: 20px;
     }
     footer{
-        height: 45vh;
+        padding-top: 20px;
+        height: 60vh;
         align-items: flex-start;
         justify-content: space-between;
         flex-direction: column;
+        box-sizing: border-box;
     }
     .adress h1{
        font-size: 20px;
