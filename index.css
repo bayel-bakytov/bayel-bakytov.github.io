@@ -17,7 +17,7 @@ body{
      z-index: 99;
 }
 nav{
-    background-color: #05386B;
+    background-color: #20686c;
     margin: 0 auto;
     width: 100%;
 }
@@ -65,11 +65,14 @@ section{
     justify-content: center;
     align-items: center;
     transition: background-atachment 0.4s;
+    font-size: 55px;
+    color: darkblue;
 }
 
 
 #about{
-     background-color:#8ee4af;
+     background-color:#20686c;
+     height: 100vh;
 }
 #about header {
     width: 30%;
@@ -102,7 +105,7 @@ section{
 .some-inf{
     padding: 15px;
     width: 85%;
-    font-size: 22px;
+    font-size: 20px;
     color:black;
     border-radius: 10px;
 
@@ -110,7 +113,7 @@ section{
 .front{
     padding: 15px;
     width: 85%;
-    font-size: 22px;
+    font-size: 20px;
     color:black;
     border-radius: 10px;
 }
@@ -222,8 +225,9 @@ section{
 }
 #contacts header h1{
     padding: 20px 40px;
-    color: aqua;
+    color: white;
     border-radius: 10px;
+    font-size: 40px;
 }
 .inputs{
     display: flex;
@@ -252,7 +256,6 @@ section{
     width: 100%;
     display: flex;
     justify-content: center;
-    
 }
 .but button{
     padding: 20px;
@@ -270,7 +273,7 @@ footer{
     justify-content: space-around;
     align-items: center;
     height: 30vh;
-    background-color: black;
+    background-color:black;
     color: white;
 }
 .logos{
@@ -285,7 +288,7 @@ footer{
   box-sizing: border-box;
 }
 .newsletter p {
-    font-size: 20px;
+    font-size: 16px;
 }
 .newsletter button{
     width: 150px;
@@ -301,7 +304,7 @@ footer{
     margin: 5px;
 }
 .adress p{
-    font-size: 25px;
+    font-size: 16px;
 }
 
 @media(max-width: 765px){
