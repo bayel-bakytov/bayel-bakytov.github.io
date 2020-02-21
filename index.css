@@ -4,23 +4,26 @@ body{
     padding: 0;
     font-family: sans-serif;
     width: 100%;
+    
+}
+html,main{
+     overflow-x: hidden;
 }
 *{
     margin: 0;
     padding: 0;
+    box-sizing: border-box;
 }
-#boss{
-    min-width: 300px;
-    width: 100%;
+#head{
      position: fixed;
     top: 0;
     left: 0; 
+    width: 100%;
      z-index: 99;
 }
 nav{
     background-color: #20686c;
     margin: 0 auto;
-    min-width: 300px;
 }
 #checkbox-menu,.toggle{
     display: none;
@@ -44,7 +47,6 @@ nav{
     font-weight: bold;
     transition: 0.3s ease-in-out;
      border-radius: 5px;
-     box-sizing: border-box;
 }
 .menu li a:hover{
     background-color: white;
@@ -60,7 +62,7 @@ section{
 }
 #home{
     margin-top: 70px;
-    background-image: url(cam.jpg);
+    background-image: url(img/cam.jpg);
     background-size: cover;
     background-attachment: fixed;
     background-repeat: no-repeat;
@@ -71,32 +73,22 @@ section{
     font-size: 55px;
     color: darkblue;
 }
-
-
 #about{
-     background-color:#20686c;
+     background-color:#5CDB95;
      height: 100vh;
 }
 #about header {
-    width: 30%;
-    height: 100px;
-    background-color: #5CDB95;
-    font-size: 40px;
+    width: 100%;
+    font-size: 35px;
     font-weight: bold;
     display: flex;
     justify-content: center;
     align-items: center;
+    text-align: center;
     color: white;
-    border-radius: 10px;
-    padding: 15px 25px;
-    margin-top: 25px;
+    padding-top: 50px;
+    padding-bottom: 25px;
     box-sizing: border-box;
-}
-.head{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 100%;
 }
 #about img {
     height: 350px;
@@ -105,19 +97,20 @@ section{
     border-radius: 50%;
 }
 .some-inf{
-    padding: 15px;
     width: 85%;
     font-size: 20px;
-    color:black;
+    color:white;
     border-radius: 10px;
-
+    padding: 15px;
+    box-sizing: border-box;
 }
 .front{
     padding: 15px;
     width: 85%;
     font-size: 20px;
-    color:black;
+    color:white;
     border-radius: 10px;
+    box-sizing: border-box;
 }
 .about-me{
     display: flex;
@@ -130,38 +123,29 @@ section{
     flex-direction: column;
 }
 .information>*{
-    margin: 25px;
-    box-sizing: border-box;
+    align-content: center;
 }
 #services{
-    padding-top: 70PX;
+    padding-top: 50PX;
     width: 100%;
     background-color:#5CDB95;
-    height: 100vh;
+    height: 110vh;
 }
 #services header{
     display: flex;
     justify-content: center;
     width: 100%;
-    background-color:#5CDB95;
-}
-#services header div{
-    margin-bottom: 65px;
+     padding-bottom: 65px;
      color: white;
-    width: 30%;
-      border-radius: 10px;
-    display: flex;
-    justify-content: center;
-    font-size: 35px;
-    font-weight: bolder;
+     font-size: 35px;
+     font-weight: bold;
 }
 .text img {
     height: 80px;
     width: 80px;
 }
-.text>h2{
-    padding-bottom: 30px;
-    color: rgb(10, 10, 136);
+.text div h3{
+    color: black;
 }
 .text {
     display: flex;
@@ -173,7 +157,7 @@ section{
     width: 30%;
     margin: 15px;
     text-align: center;
-    color: black;
+    color: white;
     transition: 0.4s;
     box-sizing: border-box;
     font-size: 18px;
@@ -195,7 +179,7 @@ section{
     width: 30%;
     margin: 15px;
     text-align: center;
-    color:black;
+    color:white;
     border-radius: 10px;
     box-sizing: border-box;
     transition: 0.4s;
@@ -204,16 +188,19 @@ section{
 .text-2 > div:hover{
     transform: translateY(-10px) ;
 }
-.text-2 > h2{
-    color: white;
+.text-2 div h3{
+    color: black;
 }
 #portfolio{
-    background-image: url(mac.jpg);
+    background-image: url(img/mac.jpg);
     background-size: cover;
     display: flex;
     justify-content: center;
     align-items: center;
-    font-size: 45px;
+}
+.link-portfolio{
+    color: blue;
+    font-size: 65px;
 }
 #contacts{
     background-color: #5CDB95;
@@ -227,7 +214,7 @@ section{
 }
 #contacts header h1{
     padding: 20px 40px;
-    color: white;
+    color: black;
     border-radius: 10px;
     font-size: 40px;
 }
@@ -261,7 +248,7 @@ section{
 }
 .but button{
     padding: 20px;
-    background-color: rgb(38, 73, 57);
+    background-color:#20686c;
     color: white;
     border: 1px solid silver;
     border-radius: 5px;
@@ -271,19 +258,19 @@ section{
 }
 .but button:hover{
     color: black;
-    background-color: rgb(28, 94, 138);
+    background-color: white;
 }
 footer{
+    margin: 0;
     width: 100%;
     display: flex;
     justify-content: space-around;
-    align-items: center;
     height: 30vh;
     background-color:#20686c;
     color: white;
 }
 .first-logo:hover{
-    color: white;
+    color: black;
 }
 .second-logo:hover{
     color: blue;
@@ -296,45 +283,29 @@ footer{
 }
 .logos{
     display: flex;
-    font-size: 35px;
-    flex-direction: column;
-    justify-content: space-between;
+    font-size: 30px;
+    flex-direction:column;
+    justify-content: space-around;
 }
-.logos>a{
-    color: gray;
+.logos > a{
+    color: white;
 }
-.newsletter input {
-  padding: 5px 10px;
-  width: 250px;
-  box-sizing: border-box;
+.newsletter,.adress{
+    margin-top: 50px;
 }
 .newsletter p {
     font-size: 16px;
-}
-.newsletter button{
-    width: 150px;
-    padding: 8px 15px;
-    border-radius: 8px;
-    cursor: pointer;
-    font-weight: bold;
-    background-color: black;
-    color: white;
-    font-size: 20px;
-    box-sizing: border-box;
-    border: 1px solid white;
-    margin: 5px;
 }
 .adress p{
     font-size: 16px;
 }
 
-@media(max-width: 754px){
+@media(max-width: 765px){
     .toggle{
         clear: both;
         display: block;
         font-size: 18px;
         line-height: 50px;
-    
         color: black;
         transition: all .1s linear;
         text-align: center;
@@ -386,50 +357,32 @@ footer{
     #home h1{
         font-size: 30px;
     }
-    .me{
-        margin-top: 15px;
-        width: 55%;
-        font-weight: 300;
-    }
-    .big-block{
-        width: 90%;
-        font-size: 40px;
-        padding: 20px;
-        margin-top: 20px;
-        font-weight: 700;
-        box-sizing: border-box;
-    }
-    .inf{
-        box-sizing: border-box;
-        width: 85%;
-        margin-top: 15px;
-    }
-    .inf p:first-child{
-        font-size: 20px;
-        font-weight: 600;
-        padding: 15px 25px;
-        box-sizing: border-box;
-    }
-
     #about{
         height: 185vh;
     }
     #about header{
-        width: 60%;
+        width: 100%;
         font-size: 30px;
-        margin: 25px;
+        text-align: center;
+    }
+    #about img{
+        height: 250px;
     }
     .about-me{
         flex-wrap: wrap;
     }
     .front{
-        font-size: 16px;
+        font-size: 18px;
+        margin: 25px;
     }
     .some-inf{
-        font-size: 16px;
+        box-sizing: border-box;
+        font-size: 18px;
+        margin: 25px;
+        margin-bottom: 0;
     }
     #services{
-        height: 250vh;
+        height: 270vh;
     }
     #services header div{
            width: 60%;
@@ -438,7 +391,10 @@ footer{
     #portfolio{
         height: 25vh;
         background-size: 100%;
-        background-repeat: no-repeat;
+        background-repeat: no-repeat;    
+    }
+    .link-portfolio{
+        font-size: 40px;
     }
     #contacts{
         height: 110vh;
